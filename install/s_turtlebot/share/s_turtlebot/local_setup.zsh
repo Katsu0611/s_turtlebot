@@ -1,1 +1,0 @@
-/home/katsu/s_turtlebot_ws/src/s_turtlebot/build/s_turtlebot/ament_cmake_environment_hooks/local_setup.zsh
