@@ -46,7 +46,12 @@ def generate_launch_description():
                        'behavior_server',
                        'bt_navigator',
                        'waypoint_follower',
+<<<<<<< HEAD
                        'velocity_smoother']
+=======
+                       'velocity_smoother',
+                       ]
+>>>>>>> acfb3d4 (Fixed Bugs)
 
     # Map fully qualified names to relative ones so the node's namespace can be prepended.
     # In case of the transforms (tf), currently, there doesn't seem to be a better alternative
@@ -110,6 +115,20 @@ def generate_launch_description():
         condition=IfCondition(PythonExpression(['not ', use_composition])),
         actions=[
             Node(
+<<<<<<< HEAD
+=======
+                package='nav2_amcl',
+                executable='amcl',
+                name='amcl',
+                output='screen',
+                respawn=use_respawn,
+                respawn_delay=2.0,
+                parameters=[configured_params],
+                arguments=['--ros-args', '--log-level', log_level],
+                remappings=remappings),
+
+            Node(
+>>>>>>> acfb3d4 (Fixed Bugs)
                 package='nav2_controller',
                 executable='controller_server',
                 output='screen',
@@ -267,4 +286,8 @@ def generate_launch_description():
     ld.add_action(load_nodes)
     ld.add_action(load_composable_nodes)
 
+<<<<<<< HEAD
     return ld
+=======
+    return ld
+>>>>>>> acfb3d4 (Fixed Bugs)

@@ -29,7 +29,11 @@
         <material>Gazebo/Blue</material>
 
         <sensor name="laser" type="ray">
+<<<<<<< HEAD
             <pose> 0 0 0 0 0 0 </pose>
+=======
+            <pose> 0 0 0 0 0 3.1416 </pose>
+>>>>>>> acfb3d4 (Fixed Bugs)
             <visualize>false</visualize>
             <update_rate>10</update_rate>
             <ray>
@@ -55,4 +59,8 @@
         </sensor>
     </gazebo>
 
+<<<<<<< HEAD
 </robot>
+=======
+</robot>
+>>>>>>> acfb3d4 (Fixed Bugs)
