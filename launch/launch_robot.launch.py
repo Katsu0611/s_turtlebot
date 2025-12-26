@@ -10,7 +10,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
 
-    package_name = 's_turtlebot'
+    package_name = 'animove'
 
     rsp = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([

@@ -17,13 +17,8 @@ diff_cont:
 
     left_wheel_names: ['left_wheel_joint']
     right_wheel_names: ['right_wheel_joint']
-<<<<<<< HEAD
-    wheel_separation: 0.30
-    wheel_radius: 0.1
-=======
     wheel_separation: 0.204
     wheel_radius: 0.033
->>>>>>> acfb3d4 (Fixed Bugs)
 
     use_stamped_vel: false
 

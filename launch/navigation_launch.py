@@ -28,7 +28,7 @@ from nav2_common.launch import RewrittenYaml
 
 def generate_launch_description():
     # Get the launch directory
-    bringup_dir = get_package_share_directory('s_turtlebot')
+    bringup_dir = get_package_share_directory('animove')
 
     namespace = LaunchConfiguration('namespace')
     use_sim_time = LaunchConfiguration('use_sim_time')
@@ -46,12 +46,8 @@ def generate_launch_description():
                        'behavior_server',
                        'bt_navigator',
                        'waypoint_follower',
-<<<<<<< HEAD
-                       'velocity_smoother']
-=======
                        'velocity_smoother',
                        ]
->>>>>>> acfb3d4 (Fixed Bugs)
 
     # Map fully qualified names to relative ones so the node's namespace can be prepended.
     # In case of the transforms (tf), currently, there doesn't seem to be a better alternative
@@ -115,8 +111,6 @@ def generate_launch_description():
         condition=IfCondition(PythonExpression(['not ', use_composition])),
         actions=[
             Node(
-<<<<<<< HEAD
-=======
                 package='nav2_amcl',
                 executable='amcl',
                 name='amcl',
@@ -128,7 +122,6 @@ def generate_launch_description():
                 remappings=remappings),
 
             Node(
->>>>>>> acfb3d4 (Fixed Bugs)
                 package='nav2_controller',
                 executable='controller_server',
                 output='screen',
@@ -285,9 +278,4 @@ def generate_launch_description():
     # Add the actions to launch all of the navigation nodes
     ld.add_action(load_nodes)
     ld.add_action(load_composable_nodes)
-
-<<<<<<< HEAD
     return ld
-=======
-    return ld
->>>>>>> acfb3d4 (Fixed Bugs)

@@ -13,7 +13,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
 
-    package_name='s_turtlebot'
+    package_name='animove'
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','rsp.launch.py'
@@ -44,7 +44,7 @@ def generate_launch_description():
 
     spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
                         arguments=['-topic', 'robot_description',
-                                   '-entity', 's_turtlebot'],
+                                   '-entity', 'animove'],
                         output='screen')
 
 

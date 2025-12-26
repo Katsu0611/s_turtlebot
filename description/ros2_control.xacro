@@ -11,11 +11,7 @@
                 <param name="device">/dev/ttyACM0</param>
                 <param name="baud_rate">57600</param>
                 <param name="timeout">1000</param>
-<<<<<<< HEAD
-                <param name="enc_counts_per_rev">3436</param>
-=======
                 <param name="enc_counts_per_rev">1975</param>
->>>>>>> acfb3d4 (Fixed Bugs)
             </hardware>
             <joint name="left_wheel_joint">
                 <command_interface name="velocity">
@@ -62,13 +58,9 @@
 
     <gazebo>
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
-            <parameters>$(find s_turtlebot)/config/my_controllers.yaml</parameters>
-            <parameters>$(find s_turtlebot)/config/gaz_ros2_ctl_use_sim.yaml</parameters>
+            <parameters>$(find animove)/config/my_controllers.yaml</parameters>
+            <parameters>$(find animove)/config/gaz_ros2_ctl_use_sim.yaml</parameters>
         </plugin>
     </gazebo>
 
-<<<<<<< HEAD
 </robot>
-=======
-</robot>
->>>>>>> acfb3d4 (Fixed Bugs)

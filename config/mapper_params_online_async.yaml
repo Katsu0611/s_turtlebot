@@ -13,17 +13,9 @@ slam_toolbox:
     map_frame: map
     base_frame: base_footprint
     scan_topic: /scan
-
-    
-<<<<<<< HEAD
-    #Use odomety of not
-    use_odom: false 
-    mode: mapping
-=======
     #Use odomety or not
     use_odom: True
     mode: localization
->>>>>>> acfb3d4 (Fixed Bugs)
     
 
     # if you'd like to immediately start continuing a map at a given pose
